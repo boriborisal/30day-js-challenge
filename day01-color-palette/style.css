@@ -1,0 +1,42 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  padding: 2rem;
+}
+
+button {
+  padding: 10px 20px;
+  margin-bottom: 1rem;
+  cursor: pointer;
+}
+
+#palette {
+  display: flex;
+  height: 300px;
+}
+
+.color-block {
+  flex: 1;
+  cursor: pointer;
+  transition: filter 0.2s;
+  /* hex 텍스트를 블록 하단 가운데에 배치 */
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 0.5rem;
+  font-size: 0.75rem;
+  /* 어떤 배경색이 오더라도 텍스트가 보이도록 흰색 + 그림자 처리 */
+  color: white;
+  text-shadow: 0 1px 3px rgba(0,0,0,0.6);
+  /* 텍스트 드래그 선택 방지 — 클릭 시 복사 UX가 어색해지지 않도록 */
+  user-select: none;
+}
+
+.color-block:hover {
+  filter: brightness(0.85);
+}
