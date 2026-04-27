@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 07 — 커스텀 셀렉트 박스</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📋 커스텀 셀렉트 박스</h1>
+  <div class="select-wrap" id="wrap">
+    <button class="select-btn" id="btn">언어를 선택하세요 <span>▾</span></button>
+    <div class="dropdown" id="dropdown">
+      <div class="search"><input id="search" placeholder="검색..." /></div>
+      <div id="optList"></div>
+    </div>
+  </div>
+  <div class="result" id="result">선택된 값: <strong>없음</strong></div>
+  <script src="main.js"></script>
+</body>
+</html>

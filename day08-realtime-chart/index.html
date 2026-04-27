@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 08 — 실시간 차트</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📈 실시간 데이터 대시보드</h1>
+  <div class="cards">
+    <div class="card"><div class="label">현재값</div><div class="val" id="cur">—</div></div>
+    <div class="card"><div class="label">최대값</div><div class="val" id="max">—</div></div>
+    <div class="card"><div class="label">평균</div><div class="val" id="avg">—</div></div>
+  </div>
+  <canvas id="chart" height="200"></canvas>
+  <div class="controls">
+    <button id="pauseBtn">⏸ 일시정지</button>
+    <button id="resetBtn">↺ 초기화</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>

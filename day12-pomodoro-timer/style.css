@@ -1,0 +1,19 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:sans-serif;background:#f9f9f9;display:flex;flex-direction:column;align-items:center;justify-content:center;min-height:100vh;padding:2rem}
+h1{font-size:1.2rem;color:#333;margin-bottom:2rem}
+.timer-wrap{position:relative;width:220px;height:220px;margin-bottom:1.5rem}
+svg{width:100%;height:100%}
+#time{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center}
+#timeText{font-size:2.8rem;font-weight:700;color:#222;display:block;font-variant-numeric:tabular-nums}
+#modeText{font-size:13px;color:#888;margin-top:4px;display:block}
+.btns{display:flex;gap:10px;margin-bottom:1.5rem}
+button{padding:10px 22px;border:1.5px solid #ddd;border-radius:20px;background:#fff;cursor:pointer;font-size:14px;font-weight:500;transition:all 0.2s}
+button:hover{border-color:#999}
+#startBtn{background:#333;color:#fff;border-color:#333}
+.cycles{font-size:13px;color:#888}
+.cycle-dot{display:inline-block;width:10px;height:10px;border-radius:50%;background:#ddd;margin:0 3px}
+.cycle-dot.done{background:#2e7d32}
+.settings{display:flex;gap:1rem;margin-top:1.5rem}
+.setting{text-align:center}
+.setting label{font-size:11px;color:#999;display:block;margin-bottom:4px}
+.setting input{width:60px;padding:6px;border:1px solid #ddd;border-radius:6px;text-align:center;font-size:14px}

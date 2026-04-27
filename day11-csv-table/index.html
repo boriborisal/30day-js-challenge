@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 11 — CSV 테이블 렌더러</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>📊 CSV → 테이블 렌더러</h1>
+  <div class="drop" id="drop">📂 CSV 파일을 여기에 드래그하거나 클릭해서 업로드</div>
+  <input type="file" id="fileInput" accept=".csv" style="display:none">
+  <textarea class="paste" id="paste" placeholder="또는 CSV를 여기에 붙여넣고 '파싱'을 클릭하세요
+이름,나이,도시
+클로이,24,서울
+철수,30,부산"></textarea>
+  <button id="parseBtn">파싱하기</button>
+  <div class="info" id="info"></div>
+  <div class="table-wrap"><table id="table"></table></div>
+  <script src="main.js"></script>
+</body>
+</html>

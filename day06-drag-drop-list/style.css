@@ -1,0 +1,15 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:sans-serif;padding:2rem;max-width:480px;margin:0 auto;background:#f9f9f9}
+h1{font-size:1.2rem;margin-bottom:0.5rem;color:#333}
+p{font-size:13px;color:#888;margin-bottom:1.5rem}
+#list{list-style:none;display:flex;flex-direction:column;gap:8px}
+.item{display:flex;align-items:center;gap:12px;padding:14px 16px;background:#fff;border:1.5px solid #eee;border-radius:10px;cursor:grab;user-select:none;transition:box-shadow 0.2s,opacity 0.2s}
+.item:hover{border-color:#ccc}
+.item.dragging{opacity:0.4;cursor:grabbing}
+.item.over{border-color:#555;border-style:dashed}
+.handle{font-size:18px;color:#ccc;cursor:grab}
+.emoji{font-size:20px}
+.text{flex:1;font-size:14px;color:#333}
+.add-wrap{display:flex;gap:8px;margin-top:1rem}
+.add-wrap input{flex:1;padding:10px 14px;border:1.5px solid #ddd;border-radius:8px;font-size:14px;outline:none}
+.add-wrap button{padding:10px 18px;background:#333;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px}

@@ -1,0 +1,15 @@
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:sans-serif;padding:2rem;background:#f9f9f9;display:flex;gap:1.5rem;min-height:100vh}
+.left{flex:1;display:flex;flex-direction:column;gap:8px}
+.right{flex:1.2;background:#fff;border:1px solid #eee;border-radius:12px;padding:1.25rem;overflow:auto;font-family:monospace;font-size:13px;line-height:1.8}
+h1{font-size:1.2rem;color:#333}
+textarea{flex:1;padding:1rem;border:1.5px solid #ddd;border-radius:10px;font-family:monospace;font-size:13px;resize:none;outline:none;min-height:300px}
+textarea:focus{border-color:#555}
+button{padding:10px;background:#333;color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:14px}
+details{margin-left:1rem}
+summary{cursor:pointer;list-style:none;color:#555}
+summary::before{content:'▶ ';font-size:10px}
+details[open] summary::before{content:'▼ '}
+.key{color:#5c6bc0;font-weight:600}
+.str{color:#2e7d32}.num{color:#e65100}.bool{color:#6a1b9a}.null{color:#c62828}
+.err{color:#c62828;font-style:italic}

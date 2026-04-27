@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 09 — JSON 트리 뷰어</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="left">
+    <h1>🌳 JSON 트리 뷰어</h1>
+    <textarea id="input" placeholder="JSON을 붙여넣으세요...">{
+  "name": "클로이",
+  "age": 24,
+  "skills": ["JavaScript", "React", "Figma"],
+  "address": {
+    "city": "서울",
+    "active": true
+  },
+  "nickname": null
+}</textarea>
+    <button id="parseBtn">파싱하기</button>
+  </div>
+  <div class="right" id="output"><span style="color:#aaa">파싱 결과가 여기 나타납니다.</span></div>
+  <script src="main.js"></script>
+</body>
+</html>

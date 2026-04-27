@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Day 06 — 드래그 앤 드롭 리스트</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🗂 드래그 앤 드롭 리스트</h1>
+  <p>항목을 드래그해서 순서를 바꿔보세요.</p>
+  <ul id="list">
+    <li class="item" draggable="true"><span class="handle">⠿</span><span class="emoji">🎨</span><span class="text">디자인 시스템 만들기</span></li>
+    <li class="item" draggable="true"><span class="handle">⠿</span><span class="emoji">💻</span><span class="text">포트폴리오 업데이트</span></li>
+    <li class="item" draggable="true"><span class="handle">⠿</span><span class="emoji">📚</span><span class="text">알고리즘 공부</span></li>
+    <li class="item" draggable="true"><span class="handle">⠿</span><span class="emoji">🏃</span><span class="text">운동하기</span></li>
+    <li class="item" draggable="true"><span class="handle">⠿</span><span class="emoji">☕</span><span class="text">커피 마시며 코딩</span></li>
+  </ul>
+  <div class="add-wrap">
+    <input id="newItem" placeholder="새 항목 추가..." />
+    <button id="addBtn">추가</button>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
