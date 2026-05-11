@@ -1,0 +1,8 @@
+body {
+  font-family: monospace;
+  padding: 2rem;
+}
+#out {
+  font-size: 16px;
+  line-height: 1.6;
+}
