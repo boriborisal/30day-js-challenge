@@ -4,11 +4,11 @@ function run() {
   const out = document.getElementById('out'); 
   out.textContent = '';//이전 출력 지우기
 
-  for (let i = 0; i < a; i++) {
-    for (let j = 0; j < a - 1 - i; j++) {
+  for (let i = 0; i < a; i++) {//줄 번호. i는 시작 값.
+    for (let j = 0; j < a - 1 - i; j++) {//공백 (a-1-i)개 찍기 
       out.textContent += ' ';
     }
-    for (let j = 0; j < 2 * i + 1; j++) {
+    for (let j = 0; j < 2 * i + 1; j++) {//별 (2i+1)개 찍기 
       out.textContent += '*';
     }
     out.textContent += '\n';
