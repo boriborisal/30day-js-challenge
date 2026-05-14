@@ -1,13 +1,66 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>Homework 3</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Homework 1-1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <button id="runBtn">실행</button>
-  <pre id="out"></pre>
-  <script src="main.js"></script>
+    <pre id="output"></pre>
+    <script>
+        let head = null;
+
+        addNode(10);
+        addNode(20);
+        addNode(30);
+
+        printList();
+
+        document.getElementById("output").textContent += "Finding node with value 20...\n";
+        const node = findNode(20);
+
+        if (node !== null) {
+            document.getElementById("output").textContent += "Node found: " + node[0] + "\n\n";
+        } else {
+            document.getElementById("output").textContent += "Node not found\n\n";
+        }
+
+        document.getElementById("output").textContent += "Deleting node with value 20...\n";
+        deleteNode(20);
+
+        printList();
+
+        function addNode(value) {
+            const newNode = [value, null];
+            if (head === null) {
+                head = newNode;
+            } else {
+                let current = head;
+                while (current[1] !== null) {
+                    current = current[1];
+                }
+                current[1] = newNode;
+            }
+        }
+
+        // 전체 리스트를 출력하는 코드 완성
+        function printList() {
+
+
+        }
+
+        // 특정 값을 찾아 해당 노드를 리턴하는 코드 완성
+        function findNode(value) {
+
+
+        }
+
+        // 특정 값의 노드를 삭제하는 코드 완성
+        function deleteNode(value) {
+
+
+        }
+    </script>
+    <!-- * 반드시 혼자힘으로 해결해야 함 -->
 </body>
 </html>
