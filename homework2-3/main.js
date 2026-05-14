@@ -24,7 +24,7 @@ function printList() {
     text += nodes[i][0] + '\n';//지금 노드의 0번 칸 값을 text에 추가 + 줄바꿈
     i = nodes[i][2];//i를 지금 노드의 2번 칸 값으로 바꾸기 (다음 노드로 이동!!)
   }
-  document.getElementById('listOut').textContent = text;
+  document.getElementById('listOut').textContent = text;//listOut에 출력, getElementById는 html에서 id가 listOut인 요소 가져오기, textContent는 그 요소 안에 글자 넣기
 }
 
 function search(target) {//target은 검색할 값
@@ -52,7 +52,7 @@ function Search() {
   const result = search(value);
   const out = document.getElementById('searchOut');
 
-  if (result !== null) {//result가 null이 아니면 = 찾았으면
+  if (result !== null) {//result가 null이 아니면
     out.textContent = '"' + value + '" 있음 (' + result + '번 노드)';//
   } else {
     out.textContent = '"' + value + '" 없음';

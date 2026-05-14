@@ -1,4 +1,4 @@
-const nodes = [];//노드들을 담을 배열
+const nodes = [];//노드들을 담을 배열//이거아님리스트로다시만들기//또다시해오기
 let head = null;
 let tail = null;// 처음엔 노드가 하나도 없으니까 둘 다 null (= 가리킬 곳 없음)
 
