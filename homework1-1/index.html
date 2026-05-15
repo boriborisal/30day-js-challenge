@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Homework 1-1</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
     <pre id="output"></pre>
     <script>
         let head = null;
-
+        
         addNode(10);
-        addNode(20);
-        addNode(30);
+        addNode(20);     
+        addNode(30);     
 
         printList();
 
@@ -43,24 +43,27 @@
             }
         }
 
-        // 전체 리스트를 출력하는 코드 완성
-        function printList() {
+   // 전체 리스트를 출력하는 코드 완성
+        function printList() {  
+            let now = head;//now는 현재 노드, 처음에는 head부터 시작
+            while (now !== null) {
+                document.getElementById("output").textContent += now[0] + "\n";//getElementById는 html에서 id가 output인 요소 가져오기, textContent는 그 요소 안에 글자 넣기
+                now = now[1];//now를 지금 노드의 1번 칸 값으로 바꾸기 (다음 노드로 이동!!)
+            }
+        }
+
+   // 특정 값을 찾아 해당 노드를 리턴하는 코드 완성
+        function findNode(value) { 
+              
+        }
+        
+   // 특정 값의 노드를 삭제하는 코드 완성 
+        function deleteNode(value) { 
 
 
         }
 
-        // 특정 값을 찾아 해당 노드를 리턴하는 코드 완성
-        function findNode(value) {
 
-
-        }
-
-        // 특정 값의 노드를 삭제하는 코드 완성
-        function deleteNode(value) {
-
-
-        }
     </script>
-    <!-- * 반드시 혼자힘으로 해결해야 함 -->
 </body>
 </html>
