@@ -8,11 +8,14 @@
 <body>
     <pre id="output"></pre>
     <script>
-        let head = null;
+        let head = null;//head는 리스트의 첫 번째 노드, 처음에는 null
         
-        addNode(10);
-        addNode(20);     
-        addNode(30);     
+        addNode(10);//첫 번째 노드 추가, head가 null이니까 head가 새 노드 가리키게 됨
+        addNode(20);//두 번째 노드 추가, head는 이미 첫 번째 노드 가리키고 있으니까 첫 번째 노드의 1번 칸이 새 노드 가리키게 됨
+        addNode(30);
+        //세 번째 노드 추가, head는 이미 첫 번째 노드 가리키고 있으니까 
+        //첫 번째 노드의 1번 칸이 두 번째 노드 가리키고 있으니까
+        //두 번째 노드의 1번 칸이 새 노드 가리키게 됨   
 
         printList();
 
@@ -47,7 +50,9 @@
         function printList() {  
             let now = head;//now는 현재 노드, 처음에는 head부터 시작
             while (now !== null) {
-                document.getElementById("output").textContent += now[0] + "\n";//getElementById는 html에서 id가 output인 요소 가져오기, textContent는 그 요소 안에 글자 넣기
+                document.getElementById("output").textContent += now[0] + "\n";
+                //getElementById는 html에서 id가 output인 요소 가져오기
+                //textContent는 그 요소 안에 글자 넣기
                 now = now[1];//now를 지금 노드의 1번 칸 값으로 바꾸기 (다음 노드로 이동!!)
             }
         }
